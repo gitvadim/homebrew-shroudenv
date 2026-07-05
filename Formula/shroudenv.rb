@@ -5,21 +5,21 @@
 class Shroudenv < Formula
   desc "Manage and protect environment variables cleanly"
   homepage "https://github.com/gitvadim/shroudenv"
-  version "1.0.2-test2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.2-test2/shroudenv_1.0.2-test2_darwin_amd64.tar.gz"
-      sha256 "8b65132e0a9dc56044b341f87dc6996d6d2f12c7c4c8e6cd49e8a1a7a4445ef9"
+      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.3/shroudenv_1.0.3_darwin_amd64.tar.gz"
+      sha256 "07d44b964d4c3f0f9b563ebd3967b146560f8274913614cfe7c9c182a3589df5"
 
       define_method(:install) do
         bin.install "shroudenv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.2-test2/shroudenv_1.0.2-test2_darwin_arm64.tar.gz"
-      sha256 "14d3709f26088ecce5ece9e1dc0ca7b4e945c619e2eca6c40408f800ffc47a9a"
+      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.3/shroudenv_1.0.3_darwin_arm64.tar.gz"
+      sha256 "2f2c11ea9f691139135d1ae62d0d0989dc96e68de62af5dfabc8cac8914af52b"
 
       define_method(:install) do
         bin.install "shroudenv"
@@ -29,15 +29,15 @@ class Shroudenv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.2-test2/shroudenv_1.0.2-test2_linux_amd64.tar.gz"
-      sha256 "0e0986c3dbc2bfa10b7a5141d6edfd2d7da40ed7a0b253abcf04ed5b7d87813e"
+      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.3/shroudenv_1.0.3_linux_amd64.tar.gz"
+      sha256 "8ba30f61067e7d8410b4862fe9f70a137cf463ec5590467fd4cf261ff6e3eb9c"
       define_method(:install) do
         bin.install "shroudenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.2-test2/shroudenv_1.0.2-test2_linux_arm64.tar.gz"
-      sha256 "0ba0b9adae90aabd45a53de0a8a8121a2dd8573e4607e6f83397e815b56416ab"
+      url "https://github.com/gitvadim/shroudenv/releases/download/v1.0.3/shroudenv_1.0.3_linux_arm64.tar.gz"
+      sha256 "1f4771e63ae1213dad38eb9106699474e6e523bae9c7dfbcaee21398bdf298b4"
       define_method(:install) do
         bin.install "shroudenv"
       end
